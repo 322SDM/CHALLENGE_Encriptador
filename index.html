@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="reset.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <title>Encriptador</title>
+</head>
+
+<body>
+    <header>
+        <img class=" logo" src="imagenes/Logo.png" alt="logo de alura">
+    </header>
+    
+    <main>
+        <section>
+            <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+
+            <div>
+                <img class="Vector_imagen" src="imagenes/Vector.png" alt="exclamación">
+                <h4 class="información">Solo letras minúsculas y sin acentos</h4>
+            </div>
+
+            <div class="botones">
+
+                <button class="boton-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="boton-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+
+            </div>
+
+        </section>
+
+        <section>
+            <textarea class="mensaje" cols="20" rows="15"></textarea>
+
+            <div class="cajaNoHayMensaje" id="caja">
+                
+                <img src="imagenes/Muñeco.png " alt="Muñeco-alura" class="muñeco">
+
+                <p class="mesaje-1">Ningún mensaje fue encontrado</p>
+
+                <p class="mesaje-2">El texto que desees encriptar o desencriptar</p> 
+            
+            </div>
+
+            <div>
+                <button class="copiar" onclick="copyToClipboard()">Copiar</button>
+            </div>
+
+        </section>
+
+
+    </main>
+    
+    <script src="script.js"></script>
+
+    <footer>
+
+        <div class="container">
+            <ul>
+                <li><a href="https://github.com/322SDM?tab=repositories" target="_blank"> <i class="fa fa-github"></i> </a> </li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a> </li>
+            </ul>
+        </div>
+
+    </footer>
+</body>
+
+</html>
